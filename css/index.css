@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    user-select: none;
+    padding: 0;
+}
+body{
+    background-color: rgb(244,248,252);
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 15;
+    /* border: 3px red solid; */
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 15px black;
+}
+.leftHeader{
+    margin: 20px;
+    display: flex;
+    width: 40%;
+    /* height: 100%; */
+    flex-direction: row;
+    /* border: 3px blue solid; */
+    justify-content: space-between;
+    align-items: center;
+}
+.headerText{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+.rightHeader{
+    display: flex;
+    width: 20%;
+    margin: 20px;
+    flex-direction: row;
+    /* border: 3px blue solid; */
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1vw;
+}
+.logoText{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.iconContainer{
+    /* border: 3px green solid; */
+    height: 100%;
+    transition: all ease 0.5s;
+    /* width: 10%; */
+}
+.iconContainer:hover{
+    transform: scale(120%);
+}
+i{
+    object-fit: contain;
+    font-size: 2.4rem;
+}
+.contactButton{
+    padding: 15px;
+    background-color: rgb(20,112,175);
+    color: white;
+    transition: all ease 0.5s;
+}
+.contactButton:hover{
+    background-color: rgb(20,112,175, 0.8);
+}
