@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    user-select: none;
+    padding: 0;
+}
+body{
+    background-color: rgb(218,251,255);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 15;
+    /* border: 3px red solid; */
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 15px black;
+    background-color: rgb(218,251,255);
+}
+.leftHeader{
+    padding: 20px;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: row;
+    /* border: 3px blue solid; */
+    justify-content: space-between;
+    align-items: center;
+}
+.headerText{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+}
+.headerText:hover{
+    text-decoration: underline;
+}
+.rightHeader{
+    display: flex;
+    width: 20%;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1vw;
+}
+.logoPairContainer{
+    /* border: 3px blue solid; */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.lefcoLogo{
+    object-fit: contain;
+    height: 60%;
+    /* margin: 0.5vh */
+    margin-right: 0.3vw;
+}
+.logoText{
+    font-size: 2.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.iconContainer, .logoContainer{
+    /* border: 3px green solid; */
+    height: 100%;
+    transition: all ease 0.5s;
+    /* width: 10%; */
+    display: flex;
+    align-items: center;
+}
+.iconContainer:hover{
+    transform: scale(110%);
+}
+i{
+    object-fit: contain;
+    font-size: 2.4rem;
+    /* color: rgb(33,65,134); */
+}
+.contactButton{
+    padding: 15px;
+    background-color: rgb(20,112,175);
+    /* background-color: rgb(68,191,182); */
+    color: white;
+    transition: all ease 0.5s;
+}
+.contactButton:hover{
+    background-color: rgb(20,112,175, 0.8);
+    /* background-color: rgb(68,191,182, 0.8); */
+}
+.mainContent{
+    width: 100%;
+    height: fit-content;
+    margin-top: 20vh;
+    /* border: 3px red solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
