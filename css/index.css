@@ -45,9 +45,7 @@ a{
     align-items: center;
     padding: 0 1vw;
 }
-.headerText:hover{
-    text-decoration: underline;
-}
+
 .rightHeader{
     display: flex;
     width: 20%;
@@ -90,8 +88,9 @@ a{
 .aboutHeaderTray{
     position: absolute;
     /* border: 3px red solid; */
-    left: -10%;
+    /* left: -10%; */
     bottom: 0;
+    left: 0;
     display: block;
     height: fit-content;
     background-color: white;
@@ -104,7 +103,15 @@ a{
     transition: all 0.5s ease;
     /* align-items: flex-start; */
     padding-left: 25%;
-    /* transform: translateX(-10%) */
+    /* transform: translateX(-100%); */
+}
+.logoPairContainer, .aboutHeader, .neighborhoodHeader{
+    /* border: 3px black solid; */
+    height: 100%;
+    /* width: 100%; */
+    /* text-align: center;
+    display: flex;
+    justify-content: center; */
 }
 .liner{
     position: relative;
@@ -119,9 +126,10 @@ a{
     padding: 5% 0;
     /* transform: translateX(25%); */
 }
-/* .aboutHeaderTray > p:hover{
+a:hover{
+    text-decoration: underline;
     
-} */
+}
 .iconContainer, .logoContainer{
     /* border: 3px green solid; */
     height: 100%;
