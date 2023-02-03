@@ -52,20 +52,33 @@
     </div>
     <div class="contactForm">
         <br />
-        <br />
-        <br />
         <form>
-            <input type="text" name="fname" placeholder="Enter Your First Name"/>
+            <div class="firstName">
+                <label for="userFName">First Name</label>
+                <br />
+                <input type="text" name="fname"/>
+            </div>
+            <div class="lastName">
+            <label for="userLName">Last Name</label>
             <br />
-            <input type="text" name="lname" placeholder="Enter Your Last Name"/>
+            <input type="text" name="lname" />
+            </div>
             <br />
-            <input type="text" name="phone#" placeholder="Enter Your Phone Number"/>
+            <label for="userPhoneNumber">Phone Number</label>
             <br />
-            <input type="text" name="email" placeholder="Enter Your Email"/>
+            <input type="text" name="phone#" placeholder= "_ _ _  - _ _ _  - _ _ _ _"/>
             <br />
-            <input type="text" name="subLine" placeholder="Enter Message Subject"/>
+            <label for="userEmailAddress">Email Address</label>
             <br />
-            <input type="text" name="message" placeholder="Enter Your Message"/>
+            <input type="text" name="email"/>
+            <br />
+            <label for="messageSubjectLine">Subject Line</label>
+            <br />
+            <input type="text" name="subjectLine" />
+            <br />
+            <label for="userMessage">Message</label>
+            <br />
+            <textarea></textarea>
             <br />
             <input type="submit" value="Submit"/>
         </form>
