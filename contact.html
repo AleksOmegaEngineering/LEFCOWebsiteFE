@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEFCO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
     <link href="/css/contact.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="images/LefcoLogo.ico" />
     <style>
@@ -44,6 +45,47 @@
     </div>
 </div>
 <!--End Header -->
+<!--Begin Main Page Content-->
+<div class="mainContent">
+    <div class="pageMessage">
+        <strong>Contact Us!</strong>
+    </div>
+    <div class="contactForm">
+        <br />
+        <form>
+            <div class="firstName">
+                <label for="userFName">First Name</label>
+                <br />
+                <input type="text" name="fname"/>
+            </div>
+            <div class="lastName">
+            <label for="userLName">Last Name</label>
+            <br />
+            <input type="text" name="lname" />
+            </div>
+            <br />
+            <label for="userPhoneNumber">Phone Number</label>
+            <br />
+            <input type="text" name="phone#" placeholder= "_ _ _  - _ _ _  - _ _ _ _"/>
+            <br />
+            <label for="userEmailAddress">Email Address</label>
+            <br />
+            <input type="text" name="email"/>
+            <br />
+            <label for="messageSubjectLine">Subject Line</label>
+            <br />
+            <input type="text" name="subjectLine" />
+            <br />
+            <label for="userMessage">Message</label>
+            <br />
+            <textarea></textarea>
+            <br />
+            <input type="submit" value="Submit"/>
+        </form>
+    </div>
+</div>
+<!--End Main Page Content-->
 <script src="js/contact.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
