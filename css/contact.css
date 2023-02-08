@@ -48,15 +48,15 @@ a{
 
 .rightHeader{
     display: flex;
-    width: 20%;
+    width: 12.5%;
     padding: 20px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-right: 1vw;
+    /* border: 3px blue solid; */
 }
 .logoPairContainer{
-    /* border: 3px blue solid; */
     height: 100%;
     display: flex;
     flex-direction: row;
