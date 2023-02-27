@@ -4,252 +4,517 @@
     user-select: none;
     padding: 0;
 }
-body{
-    background-color: rgb(218,251,255);
-}
-a{
-    text-decoration: none;
-    color: inherit;
-}
-.header{
-    display: flex;
-    flex-direction: row;
-    height: 15vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 15;
-    /* border: 3px red solid; */
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px 0px 15px black;
-    background-color: rgb(218,251,255);
-}
-.leftHeader{
-    padding: 0 20px;
-    display: flex;
-    width: 40%;
-    height: 100%;
-    flex-direction: row;
-    /* border: 3px blue solid; */
-    justify-content: space-between;
-    align-items: center;
-}
-.headerText{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    transition: all ease 0.5s;
-    display: flex;
-    align-items: center;
-    padding: 0 1vw;
-}
+@media only screen and (min-width: 768px){
+    body{
+        background-color: rgb(218,251,255);
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        height: 15vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 15;
+        /* border: 3px red solid; */
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 0px 15px black;
+        background-color: rgb(218,251,255);
+    }
+    .leftHeader{
+        padding: 0 20px;
+        display: flex;
+        width: 40%;
+        height: 100%;
+        flex-direction: row;
+        /* border: 3px blue solid; */
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headerText{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+        transition: all ease 0.5s;
+        display: flex;
+        align-items: center;
+        padding: 0 1vw;
+    }
 
-.rightHeader{
-    display: flex;
-    width: 12.5%;
-    padding: 20px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 1vw;
-    /* border: 3px blue solid; */
-}
-.logoPairContainer{
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.lefcoLogo{
-    object-fit: contain;
-    height: 60%;
-    /* margin: 0.5vh */
-    margin-right: 0.3vw;
-}
-.logoText{
-    font-size: 2.4rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-}
-.aboutHeader{
-    /* border: 3px green solid; */
-    position: relative;
-    height: 100%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    transition: all ease 0.5s;
-    display: flex;
-    align-items: center;
-    padding: 0 1vw;
-}
-.aboutHeaderTray{
-    position: absolute;
-    /* border: 3px red solid; */
-    /* left: -10%; */
-    bottom: 0;
-    left: 0;
-    display: block;
-    height: fit-content;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    width: 150%;
-    /* display: none; */
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s ease;
-    /* align-items: flex-start; */
-    padding-left: 25%;
-    /* transform: translateX(-100%); */
-}
-.logoPairContainer, .aboutHeader, .neighborhoodHeader{
-    /* border: 3px black solid; */
-    height: 100%;
-    /* width: 100%; */
-    /* text-align: center;
-    display: flex;
-    justify-content: center; */
-}
-.liner{
-    position: relative;
-    right: 20%;
-    width: 120%;
-    height: 1px;
-    background: rgb(201,201,201);
+    .rightHeader{
+        display: flex;
+        width: 12.5%;
+        padding: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 1vw;
+        /* border: 3px blue solid; */
+    }
+    .logoPairContainer{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .lefcoLogo{
+        object-fit: contain;
+        height: 60%;
+        /* margin: 0.5vh */
+        margin-right: 0.3vw;
+    }
+    .logoText{
+        font-size: 2.4rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+    .aboutHeader{
+        /* border: 3px green solid; */
+        position: relative;
+        height: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+        transition: all ease 0.5s;
+        display: flex;
+        align-items: center;
+        padding: 0 1vw;
+    }
+    .aboutHeaderTray{
+        position: absolute;
+        /* border: 3px red solid; */
+        /* left: -10%; */
+        bottom: 0;
+        left: 0;
+        display: block;
+        height: fit-content;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 150%;
+        /* display: none; */
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease;
+        /* align-items: flex-start; */
+        padding-left: 25%;
+        /* transform: translateX(-100%); */
+    }
+    .logoPairContainer, .aboutHeader, .neighborhoodHeader{
+        /* border: 3px black solid; */
+        height: 100%;
+        /* width: 100%; */
+        /* text-align: center;
+        display: flex;
+        justify-content: center; */
+    }
+    .liner{
+        position: relative;
+        right: 20%;
+        width: 120%;
+        height: 1px;
+        background: rgb(201,201,201);
 
+    }
+    .aboutHeaderTray > a{
+        font-size: 1rem;
+        padding: 5% 0;
+        /* transform: translateX(25%); */
+    }
+    a:hover{
+        text-decoration: underline;
+        
+    }
+    .iconContainer, .logoContainer{
+        /* border: 3px green solid; */
+        height: 100%;
+        transition: all ease 0.5s;
+        /* width: 10%; */
+        display: flex;
+        align-items: center;
+    }
+    .iconContainer:hover{
+        transform: scale(110%);
+    }
+    i{
+        object-fit: contain;
+        font-size: 2.4rem;
+        /* color: rgb(33,65,134); */
+    }
+    .contactButton{
+        padding: 15px;
+        background-color: rgb(20,112,175);
+        /* background-color: rgb(68,191,182); */
+        color: white;
+        transition: all ease 0.5s;
+    }
+    .contactButton:hover{
+        background-color: rgb(20,112,175, 0.8);
+        /* background-color: rgb(68,191,182, 0.8); */
+    }
+    .mainContent{
+        width: 100%;
+        height: fit-content;
+        margin-top: 20vh;
+        /* border: 3px red solid; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-1{
+        background-color:white;
+        height:130px;
+        width:300px;
+        padding-top:40px;
+        left:270px;
+        top:180px;
+        text-align:center;
+        font-size:30px;
+        margin-top: -30px;
+        margin-left:-30px;
+    }
+    .box-2{
+        background-color:#c9c9c9;
+        height:130px;
+        width:300px;
+        margin-top:70px;
+        position:absolute;
+        margin-left:-110px;
+    }
+    #pageMessage{
+        font-family: 'Poppins', sans-serif;
+        padding-right:600px;
+        margin-left: -100px;
+    }
+    #contactInfo{
+        font-family: 'Poppins', sans-serif;
+        margin-left: -500px;
+        margin-top: 300px;
+    }
+    #donations{
+        padding-bottom:10px;
+        font-size:30px;
+    }
+    #volunteering{
+        padding-bottom:10px;
+        font-size:30px;
+    }
+    #generalQuestions{
+        font-size:30px;
+    }
+    .websiteContact{
+        font-family: 'Poppins', sans-serif;
+        padding-top:30px;
+        font-size:24px;
+    }
+    #contactForm{
+        font-family: 'Poppins', sans-serif;
+        padding-left:700px;
+    }
+    input[type=text], select{
+        width:100%;
+        padding: 12px 20px;
+        margin:8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius:4px;
+        box-sizing:border-box;
+        font-size: 16px;
+    }
+    input[type=submit]{
+        background-color: rgb(24, 179, 240);
+        border:none;
+        color:white;
+        padding: 16px 32px;
+        text-decoration:none;
+        margin: 4px 2px;
+        cursor:pointer;
+    }
+    input[type=submit]:hover{
+        background-color: rgb(30, 59, 224);
+    }
+    textarea{
+        width:100%;
+        height:150px;
+        padding:12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        resize:none;
+    }
+    .firstName{
+        float:left;
+        margin-right:10px;
+    }
+    .lastName{
+        float:left;
+    }
 }
-.aboutHeaderTray > a{
-    font-size: 1rem;
-    padding: 5% 0;
-    /* transform: translateX(25%); */
-}
-a:hover{
-    text-decoration: underline;
-    
-}
-.iconContainer, .logoContainer{
-    /* border: 3px green solid; */
-    height: 100%;
-    transition: all ease 0.5s;
-    /* width: 10%; */
-    display: flex;
-    align-items: center;
-}
-.iconContainer:hover{
-    transform: scale(110%);
-}
-i{
-    object-fit: contain;
-    font-size: 2.4rem;
-    /* color: rgb(33,65,134); */
-}
-.contactButton{
-    padding: 15px;
-    background-color: rgb(20,112,175);
-    /* background-color: rgb(68,191,182); */
-    color: white;
-    transition: all ease 0.5s;
-}
-.contactButton:hover{
-    background-color: rgb(20,112,175, 0.8);
-    /* background-color: rgb(68,191,182, 0.8); */
-}
-.mainContent{
-    width: 100%;
-    height: fit-content;
-    margin-top: 20vh;
-    /* border: 3px red solid; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.box-1{
-    background-color:white;
-    height:130px;
-    width:300px;
-    padding-top:40px;
-    position:absolute;
-    left:270px;
-    top:180px;
-    text-align:center;
-    font-size:30px;
-}
-.box-2{
-    background-color:#c9c9c9;
-    height:130px;
-    width:300px;
-    margin-top:70px;
-    position:absolute;
-    margin-left:-110px;
-}
-#pageMessage{
-    font-family: 'Poppins', sans-serif;
-    padding-right:600px;
-}
-#contactInfo{
-    font-family: 'Poppins', sans-serif;
-    margin-left:-380px; 
-    margin-top:-350px;
-}
-#donations{
-    padding-bottom:10px;
-    font-size:30px;
-}
-#volunteering{
-    padding-bottom:10px;
-    font-size:30px;
-}
-#generalQuestions{
-    font-size:30px;
-}
-.websiteContact{
-    font-family: 'Poppins', sans-serif;
-    padding-top:30px;
-    font-size:24px;
-}
-#contactForm{
-    font-family: 'Poppins', sans-serif;
-    padding-left:700px;
-}
-input[type=text], select{
-    width:100%;
-    padding: 12px 20px;
-    margin:8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius:4px;
-    box-sizing:border-box;
-    font-size: 16px;
-}
-input[type=submit]{
-    background-color: rgb(24, 179, 240);
-    border:none;
-    color:white;
-    padding: 16px 32px;
-    text-decoration:none;
-    margin: 4px 2px;
-    cursor:pointer;
-}
-input[type=submit]:hover{
-    background-color: rgb(30, 59, 224);
-}
-textarea{
-    width:100%;
-    height:150px;
-    padding:12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    resize:none;
-}
-.firstName{
-    float:left;
-    margin-right:10px;
-}
-.lastName{
-    float:left;
+/* For mobile phones */
+@media only screen and (max-width: 768px){
+    body{
+        background-color: rgb(218,251,255);
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        height: 15vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 15;
+        /* border: 3px red solid; */
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 0px 15px black;
+        background-color: rgb(218,251,255);
+    }
+    .leftHeader{
+        padding: 0 20px;
+        display: flex;
+        width: 40%;
+        height: 100%;
+        flex-direction: row;
+        /* border: 3px blue solid; */
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headerText{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+        transition: all ease 0.5s;
+        display: flex;
+        align-items: center;
+        padding: 0 1vw;
+    }
+
+    .rightHeader{
+        display: flex;
+        width: 12.5%;
+        padding: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 1vw;
+        /* border: 3px blue solid; */
+    }
+    .logoPairContainer{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .lefcoLogo{
+        object-fit: contain;
+        height: 60%;
+        /* margin: 0.5vh */
+        margin-right: 0.3vw;
+    }
+    .logoText{
+        font-size: 2.4rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+    .aboutHeader{
+        /* border: 3px green solid; */
+        position: relative;
+        height: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+        transition: all ease 0.5s;
+        display: flex;
+        align-items: center;
+        padding: 0 1vw;
+    }
+    .aboutHeaderTray{
+        position: absolute;
+        /* border: 3px red solid; */
+        /* left: -10%; */
+        bottom: 0;
+        left: 0;
+        display: block;
+        height: fit-content;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 150%;
+        /* display: none; */
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease;
+        /* align-items: flex-start; */
+        padding-left: 25%;
+        /* transform: translateX(-100%); */
+    }
+    .logoPairContainer, .aboutHeader, .neighborhoodHeader{
+        /* border: 3px black solid; */
+        height: 100%;
+        /* width: 100%; */
+        /* text-align: center;
+        display: flex;
+        justify-content: center; */
+    }
+    .liner{
+        position: relative;
+        right: 20%;
+        width: 120%;
+        height: 1px;
+        background: rgb(201,201,201);
+
+    }
+    .aboutHeaderTray > a{
+        font-size: 1rem;
+        padding: 5% 0;
+        /* transform: translateX(25%); */
+    }
+    a:hover{
+        text-decoration: underline;
+        
+    }
+    .iconContainer, .logoContainer{
+        /* border: 3px green solid; */
+        height: 100%;
+        transition: all ease 0.5s;
+        /* width: 10%; */
+        display: flex;
+        align-items: center;
+    }
+    .iconContainer:hover{
+        transform: scale(110%);
+    }
+    i{
+        object-fit: contain;
+        font-size: 2.4rem;
+        /* color: rgb(33,65,134); */
+    }
+    .contactButton{
+        padding: 15px;
+        background-color: rgb(20,112,175);
+        /* background-color: rgb(68,191,182); */
+        color: white;
+        transition: all ease 0.5s;
+    }
+    .contactButton:hover{
+        background-color: rgb(20,112,175, 0.8);
+        /* background-color: rgb(68,191,182, 0.8); */
+    }
+    .mainContent{
+        width: 100%;
+        height: fit-content;
+        margin-top: 20vh;
+        /* border: 3px red solid; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-1{
+        background-color:white;
+        height:130px;
+        width:300px;
+        padding-top:40px;
+        left:270px;
+        top:180px;
+        text-align:center;
+        font-size:30px;
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+    .box-2{
+        background-color:#c9c9c9;
+        height:130px;
+        width:300px;
+        margin-top:70px;
+        position:absolute;
+        margin-right: 350px;
+    }
+    #pageMessage{
+        font-family: 'Poppins', sans-serif;
+        padding-right:600px;
+        margin-left: 330px;
+    }
+    #contactInfo{
+        font-family: 'Poppins', sans-serif;
+        margin-left: 60px; 
+        margin-top: 250px;
+    }
+    #donations{
+        padding-bottom:10px;
+        font-size:30px;
+        margin-left: 20px;
+    }
+    #volunteering{
+        padding-bottom:10px;
+        font-size:30px;
+        margin-left: 20px;
+    }
+    #generalQuestions{
+        font-size:30px;
+        margin-left: 20px;
+    }
+    .websiteContact{
+        font-family: 'Poppins', sans-serif;
+        padding-top:30px;
+        font-size:20px;
+        padding-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        margin-left: -20px;
+    }
+    #contactForm{
+        font-family: 'Poppins', sans-serif;
+    }
+    input[type=text], select{
+        width:300px;
+        padding: 12px 20px;
+        margin:8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius:4px;
+        box-sizing:border-box;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+    }
+    input[type=submit]{
+        background-color: rgb(24, 179, 240);
+        border:none;
+        color:white;
+        padding: 16px 32px;
+        text-decoration:none;
+        margin: 4px 2px;
+        cursor:pointer;
+    }
+    input[type=submit]:hover{
+        background-color: rgb(30, 59, 224);
+    }
+    textarea{
+        width:100%;
+        height:150px;
+        padding:12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        resize:none;
+    }
+    .firstName{
+        float:left;
+        margin-right:10px;
+    }
+    .lastName{
+        float:left;
+    }
 }
