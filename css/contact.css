@@ -4,6 +4,7 @@
     user-select: none;
     padding: 0;
 }
+/* For Desktop */
 @media only screen and (min-width: 768px){
     body{
         background-color: rgb(218,251,255);
@@ -46,7 +47,6 @@
         align-items: center;
         padding: 0 1vw;
     }
-
     .rightHeader{
         display: flex;
         width: 12.5%;
@@ -120,7 +120,6 @@
         width: 120%;
         height: 1px;
         background: rgb(201,201,201);
-
     }
     .aboutHeaderTray > a{
         font-size: 1rem;
@@ -129,7 +128,6 @@
     }
     a:hover{
         text-decoration: underline;
-        
     }
     .iconContainer, .logoContainer{
         /* border: 3px green solid; */
@@ -164,101 +162,98 @@
         margin-top: 20vh;
         /* border: 3px red solid; */
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        align-items: left;
     }
-    .box-1{
-        background-color:white;
-        height:130px;
-        width:300px;
-        padding-top:40px;
-        left:270px;
-        top:180px;
-        text-align:center;
-        font-size:30px;
+    .pageMessage{
+        display:flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: fit-content;
+        height: fit-content;
+        margin: 5vh 5vh 5vh 0;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 3rem;
+        background-color: rgb(248,248,248);
+        box-shadow: 35px 35px 0px rgb(201,201,201);
+        padding: 5vh 5vw;
+    }
+    .leftSidePage{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
         margin-top: -30px;
-        margin-left:-30px;
     }
-    .box-2{
-        background-color:#c9c9c9;
-        height:130px;
-        width:300px;
-        margin-top:70px;
-        position:absolute;
-        margin-left:-110px;
+    .websiteContact ul{
+        list-style-type:none;
     }
-    #pageMessage{
+    .contactReasons{
         font-family: 'Poppins', sans-serif;
-        padding-right:600px;
-        margin-left: -100px;
-    }
-    #contactInfo{
-        font-family: 'Poppins', sans-serif;
-        margin-left: -500px;
-        margin-top: 300px;
-    }
-    #donations{
-        padding-bottom:10px;
-        font-size:30px;
-    }
-    #volunteering{
-        padding-bottom:10px;
-        font-size:30px;
-    }
-    #generalQuestions{
-        font-size:30px;
+        font-weight: 500;
+        font-size: 2rem; 
+        padding-top: 40px;
     }
     .websiteContact{
         font-family: 'Poppins', sans-serif;
-        padding-top:30px;
-        font-size:24px;
+        font-weight: 500;
+        font-size: 2rem;
+        padding-top: 30px;
+        padding-left: 90px;
     }
-    #contactForm{
+    .contactPage{
+        display:flex;
+        flex-direction:row;
+        align-items:right;
         font-family: 'Poppins', sans-serif;
-        padding-left:700px;
     }
-    input[type=text], select{
-        width:100%;
-        padding: 12px 20px;
-        margin:8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius:4px;
-        box-sizing:border-box;
-        font-size: 16px;
+    form input[type=text]{
+        padding:10px;
+        margin-bottom:20px;
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
     }
-    input[type=submit]{
-        background-color: rgb(24, 179, 240);
-        border:none;
-        color:white;
-        padding: 16px 32px;
-        text-decoration:none;
-        margin: 4px 2px;
-        cursor:pointer;
+    form{
+        margin-left: 200px;
     }
-    input[type=submit]:hover{
-        background-color: rgb(30, 59, 224);
+    .name{
+        float:left;
+        padding-right:20px;
+    }
+    #phoneN{
+        padding-right:213px;
+    }
+    #emailA{
+        padding-right:213px;
+    }
+    #subjectL{
+        padding-right:213px;
     }
     textarea{
-        width:100%;
-        height:150px;
-        padding:12px 20px;
+        width: 386px;
+        height: 90px;
+        padding: 12px 20px;
         box-sizing: border-box;
-        border: 2px solid #ccc;
+        font-size: 13px;
+        resize: none;
+        font-family: 'Poppins', sans-serif;
+    }
+    input[type=submit] {
+        background-color: rgb(20,112,175);
+        color: white;
+        padding: 12px 20px;
+        border: none;
         border-radius: 4px;
-        font-size: 16px;
-        resize:none;
-    }
-    .firstName{
-        float:left;
-        margin-right:10px;
-    }
-    .lastName{
-        float:left;
-    }
+        cursor: pointer;
+        float: left;
+      }
+    input[type=submit]:hover {
+        background-color: rgb(20,112,175, 0.8);
+    }    
 }
-/* For mobile phones */
-@media only screen and (max-width: 768px){
+
+/* For Mobile Phones */
+@media only screen and (max-width:768px){
     body{
         background-color: rgb(218,251,255);
     }
@@ -300,7 +295,6 @@
         align-items: center;
         padding: 0 1vw;
     }
-
     .rightHeader{
         display: flex;
         width: 12.5%;
@@ -374,7 +368,6 @@
         width: 120%;
         height: 1px;
         background: rgb(201,201,201);
-
     }
     .aboutHeaderTray > a{
         font-size: 1rem;
@@ -383,7 +376,6 @@
     }
     a:hover{
         text-decoration: underline;
-        
     }
     .iconContainer, .logoContainer{
         /* border: 3px green solid; */
@@ -418,103 +410,99 @@
         margin-top: 20vh;
         /* border: 3px red solid; */
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
-    .box-1{
-        background-color:white;
-        height:130px;
-        width:300px;
-        padding-top:40px;
-        left:270px;
-        top:180px;
-        text-align:center;
-        font-size:30px;
+    .pageMessage{
+        display:flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: fit-content;
+        height: fit-content;
+        margin: 5vh 5vh 5vh 0;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 3rem;
+        background-color: rgb(248,248,248);
+        box-shadow: 35px 35px 0px rgb(201,201,201);
+        padding: 5vh 5vw;
+        margin-left: -150px;
+    }
+    .leftSidePage{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
         margin-top: -30px;
-        margin-left: -30px;
+        margin-left: 150px;
     }
-    .box-2{
-        background-color:#c9c9c9;
-        height:130px;
-        width:300px;
-        margin-top:70px;
-        position:absolute;
-        margin-right: 350px;
+    .websiteContact ul{
+        list-style-type:none;
     }
-    #pageMessage{
+    .contactReasons{
         font-family: 'Poppins', sans-serif;
-        padding-right:600px;
-        margin-left: 330px;
-    }
-    #contactInfo{
-        font-family: 'Poppins', sans-serif;
-        margin-left: 60px; 
-        margin-top: 250px;
-    }
-    #donations{
-        padding-bottom:10px;
-        font-size:30px;
-        margin-left: 20px;
-    }
-    #volunteering{
-        padding-bottom:10px;
-        font-size:30px;
-        margin-left: 20px;
-    }
-    #generalQuestions{
-        font-size:30px;
-        margin-left: 20px;
+        font-weight: 500;
+        font-size: 2rem; 
+        padding-top: 40px;
+        margin-left: -110px;
     }
     .websiteContact{
         font-family: 'Poppins', sans-serif;
-        padding-top:30px;
-        font-size:20px;
-        padding-bottom: 60px;
-        display: flex;
-        flex-direction: column;
-        margin-left: -20px;
+        font-weight: 500;
+        font-size: 1.5rem;
+        padding-top: 30px;
+        padding-left: 90px;
+        margin-left: -240px;
     }
-    #contactForm{
+    .contactPage{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
         font-family: 'Poppins', sans-serif;
     }
-    input[type=text], select{
-        width:300px;
-        padding: 12px 20px;
-        margin:8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius:4px;
-        box-sizing:border-box;
-        font-size: 16px;
+    form input[type=text]{
+        padding:10px;
+        margin-bottom:20px;
+        font-size: 13px;
         font-family: 'Poppins', sans-serif;
     }
-    input[type=submit]{
-        background-color: rgb(24, 179, 240);
-        border:none;
-        color:white;
-        padding: 16px 32px;
-        text-decoration:none;
-        margin: 4px 2px;
-        cursor:pointer;
+    form{
+        padding-top: 100px;
+        margin-left: 25px;
     }
-    input[type=submit]:hover{
-        background-color: rgb(30, 59, 224);
+    .name{
+        float:left;
+        padding-right:20px;
+    }
+    #phoneN{
+        padding-right:213px;
+    }
+    #emailA{
+        padding-right:213px;
+    }
+    #subjectL{
+        padding-right:213px;
     }
     textarea{
-        width:100%;
-        height:150px;
-        padding:12px 20px;
+        width: 386px;
+        height: 90px;
+        padding: 12px 20px;
         box-sizing: border-box;
-        border: 2px solid #ccc;
+        font-size: 13px;
+        resize: none;
+        font-family: 'Poppins', sans-serif;
+    }
+    input[type=submit] {
+        background-color: rgb(20,112,175);
+        color: white;
+        padding: 12px 20px;
+        border: none;
         border-radius: 4px;
-        font-size: 16px;
-        resize:none;
+        cursor: pointer;
+        float: left;
+        margin-bottom:30px;
+      }
+    input[type=submit]:hover {
+        background-color: rgb(20,112,175, 0.8);
     }
-    .firstName{
-        float:left;
-        margin-right:10px;
-    }
-    .lastName{
-        float:left;
-    }
+    
 }
