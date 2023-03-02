@@ -302,7 +302,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-right: 1vw;
+        margin-right: 2vw;
         /* border: 3px blue solid; */
     }
     .logoPairContainer{
@@ -332,7 +332,7 @@
         transition: all ease 0.5s;
         display: flex;
         align-items: center;
-        padding: 0 1vw;
+        padding: 10px;
     }
     .aboutHeaderTray{
         position: absolute;
@@ -399,6 +399,7 @@
         /* background-color: rgb(68,191,182); */
         color: white;
         transition: all ease 0.5s;
+        display:none;
     }
     .contactButton:hover{
         background-color: rgb(20,112,175, 0.8);
