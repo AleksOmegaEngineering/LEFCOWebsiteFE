@@ -5,7 +5,7 @@
     padding: 0;
 }
 /* For Desktop */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 500px){
     body{
         background-color: rgb(218,251,255);
     }
@@ -253,7 +253,7 @@
 }
 
 /* For Mobile Phones */
-@media only screen and (max-width:768px){
+@media only screen and (max-width:500px){
     body{
         background-color: rgb(218,251,255);
     }
